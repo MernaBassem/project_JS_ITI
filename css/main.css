@@ -1,0 +1,770 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .container {
+  background-color: RGB(51, 51, 51);
+  width: 100%;
+  margin: auto;
+}
+nav .container .caption {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+nav .container ul li {
+  padding: 14px 24px;
+}
+
+nav .container ul li a {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff305b;
+}
+
+nav .container #card-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ff305b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 14px 0px;
+
+  border-radius: 50%;
+}
+nav .container #card-icon i {
+  font-size: 20px;
+  color: white;
+}
+
+#card {
+  width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 1, 0.503);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card #card-info {
+  width: 80%;
+  height: 85vh;
+  overflow: auto;
+  background-size: 100% 100%;
+  background-color: white;
+  background-position: center center;
+
+  padding-inline: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#card #card-info #exit4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  margin: 10px;
+  color: #ff305b;
+  cursor: pointer;
+}
+
+#card #card-info .all_data {
+  display: flex;
+  /* margin-top: 20px ; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#card #card-info .pro_card {
+  margin: 20px 35px 0px 0px;
+  width: 28%;
+  border-radius: 5px;
+  border: #ff305b solid 1px;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.573));
+}
+#card #card-info div .img {
+  overflow: hidden;
+  height: 350px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  object-fit: cover;
+  border-bottom: #ff305b solid 1px;
+  border-top: #ff305b solid 1px;
+}
+#card #card-info div .img img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: all 1s;
+}
+#card #card-info .img img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+#card #card-info div .contact {
+  padding: 10px;
+}
+
+#card #card-info div .contact h3 {
+  font-size: 35px;
+  padding: 8px 5px;
+  color: #ff305b;
+}
+
+#card #card-info div .contact span {
+  padding: 10px 5px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#card #card-info div .contact .del {
+  position: relative;
+}
+#card #card-info div .contact .del::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #ff305b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#card #card-info div .contact p {
+  font-size: 24px;
+  padding: 8px 5px;
+  text-transform: capitalize;
+}
+#card #card-info div .contact .icon {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+#card #card-info div .contact .icon {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: #ff305b;
+  border: 2px solid #ff305b;
+  margin: 14px auto;
+  color: white;
+  font-size: 25px;
+}
+
+#card #card-info div .contact .icon:hover {
+  background-color: white;
+  border: 2px solid #ff305b;
+  color: #ff305b;
+}
+
+#card #card-info div .contact #para-number {
+  display: block !important;
+}
+
+#para-number {
+  display: none;
+}
+
+#card #card-info div .contact .Delete{
+  display: block !important;
+}
+/* #card #card-info div .contact #lab-lenovo{
+  display: none;
+} */
+#card #card-info div .contact .icon{
+  display: none;
+}
+
+
+.Delete{
+  display: none !important;
+}
+
+
+/* //////////////////////////////////////// */
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: linear-gradient(rgba(0, 0, 0, 0.484), rgba(0, 0, 0, 0.484)),
+    url("../image/online-shopping-is-it-really-worth-it.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#home .container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#home h1 {
+  color: #ff305b;
+  align-content: end;
+  font-weight: bold;
+  font-size: 90px;
+  padding-right: 30px;
+}
+
+#home a {
+  display: none;
+}
+
+#home a.scrolled {
+  display: block;
+}
+
+#home .arrow {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff305b;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+}
+
+#home .arrow i {
+  font-size: 25px;
+  color: white;
+}
+
+#why {
+  padding: 50px 0px;
+  background-color: RGB(241, 241, 241);
+}
+
+#why .container {
+  padding: 50px 0px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#why .container .img {
+  width: 48%;
+}
+
+#why .container .img img {
+  width: 99%;
+}
+#why .container .why_info {
+  width: 48%;
+}
+
+#why .container .why_info h2 {
+  color: #ff305b;
+  font-size: 45px;
+  padding-inline: 20px;
+}
+
+#why .container .why_info p {
+  line-height: 30px;
+  font-size: 23px;
+  padding: 20px;
+}
+
+#why .container .why_info ul li {
+  display: flex;
+  padding: 10px 20px;
+  /* justify-content: space-between; */
+}
+
+#why .container .why_info ul li div {
+  background-color: #ff305b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#why .container .why_info ul li div i {
+  font-size: 20px;
+  color: white;
+}
+#why .container .why_info ul li span {
+  font-size: 22px;
+  padding-left: 15px;
+}
+
+#slider {
+  height: 500px;
+}
+
+#slider .container {
+  width: 90%;
+  height: 100%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#slider .image {
+  width: 88%;
+  height: 100%;
+}
+#slider .image #image1 {
+  width: 100%;
+  height: 100%;
+}
+#slider .back,
+#slider .next {
+  cursor: pointer;
+  width: 4%;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff305b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#slider .back button,
+#slider .next button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#slider .back i,
+#slider .next i {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#category {
+  margin-top: 60px;
+  padding-block: 80px;
+  background-color: RGB(241, 241, 241);
+}
+
+#category .container {
+  width: 90%;
+  margin: auto;
+}
+
+#category .container h2 {
+  padding: 20px 20px 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#category .container .hr1 {
+  margin: auto;
+  height: 3px;
+  background-color: #ff305b;
+  width: 80px;
+}
+#category .container .hr2 {
+  background-color: #ff305b;
+  height: 3px;
+  margin: 4px auto;
+
+  width: 150px;
+}
+#category .container .link {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#category .container .link a {
+  font-size: 30px;
+  padding: 7px 15px;
+  color: black;
+}
+
+#category .container .link a.active {
+  background-color: #ff305b;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.product #pro_car,
+.product #pro_phone,
+.product #pro_makeup {
+  display: none;
+}
+
+.product #pro_lab .all,
+.product #pro_car .all,
+.product #pro_phone .all,
+.product #pro_makeup .all {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product #pro_lab .type,
+.product #pro_car .type,
+.product #pro_phone .type,
+.product #pro_makeup .type {
+  margin-block: 15px;
+  width: 32%;
+  border-radius: 5px;
+  border: #ff305b solid 1px;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.573));
+}
+.product #pro_lab div .img,
+.product #pro_car div .img,
+.product #pro_phone div .img,
+.product #pro_makeup div .img {
+  overflow: hidden;
+  height: 350px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  object-fit: cover;
+  border-bottom: #ff305b solid 1px;
+  border-top: #ff305b solid 1px;
+}
+.product #pro_lab div .img img,
+.product #pro_car div .img img,
+.product #pro_phone div .img img,
+.product #pro_makeup div .img img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: all 1s;
+}
+.product #pro_lab div .img img:hover,
+.product #pro_car div .img img:hover,
+.product #pro_phone div .img img:hover,
+.product #pro_makeup div .img img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.product #pro_lab div .contact,
+.product #pro_car div .contact,
+.product #pro_phone div .contact,
+.product #pro_makeup div .contact {
+  padding: 10px;
+}
+
+.product #pro_lab div .contact h3,
+.product #pro_car div .contact h3,
+.product #pro_phone div .contact h3,
+.product #pro_makeup div .contact h3 {
+  font-size: 35px;
+  padding: 8px 5px;
+  color: #ff305b;
+}
+
+.product #pro_lab div .contact span,
+.product #pro_car div .contact span,
+.product #pro_phone div .contact span,
+.product #pro_makeup div .contact span {
+  padding: 10px 5px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.product #pro_lab div .contact .del,
+.product #pro_car div .contact .del,
+.product #pro_phone div .contact .del,
+.product #pro_makeup div .contact .del {
+  position: relative;
+}
+.product #pro_lab div .contact .del::after,
+.product #pro_car div .contact .del::after,
+.product #pro_phone div .contact .del::after,
+.product #pro_makeup div .contact .del::after {
+  position: absolute;
+  content: "";
+  width: 85px;
+  height: 2px;
+  background-color: #ff305b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.product #pro_makeup div .contact .del::after {
+  width:60px;
+}
+.product #pro_lab div .contact p,
+.product #pro_car div .contact p,
+.product #pro_phone div .contact p,
+.product #pro_makeup div .contact p {
+  font-size: 24px;
+  padding: 8px 5px;
+  text-transform: capitalize;
+}
+.product #pro_lab div .contact .icon,
+.product #pro_car div .contact .icon,
+.product #pro_phone div .contact .icon,
+.product #pro_makeup div .contact .icon {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.product #pro_lab div .contact .icon,
+.product #pro_car div .contact .icon,
+.product #pro_phone div .contact .icon,
+.product #pro_makeup div .contact .icon {
+  border-radius: 5px;
+  border: 2px solid #ff305b;
+  padding: 10px;
+  background-color: #ff305b;
+
+  margin: 14px auto;
+  color: white;
+  font-size: 25px;
+}
+
+.product #pro_lab div .contact .icon:hover,
+.product #pro_car div .contact .icon:hover,
+.product #pro_phone div .contact .icon:hover,
+.product #pro_makeup div .contact .icon:hover {
+  background-color: white;
+  border: 2px solid #ff305b;
+  color: #ff305b;
+}
+
+/* /////////////////////////////////// */
+#light-box,
+#light-box1,
+#light-box2,
+#light-box3 {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 1, 0.503);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none {
+  display: none !important;
+}
+
+#light-box #box-data,
+#light-box1 #box-data1,
+#light-box2 #box-data2,
+#light-box3 #box-data3 {
+  width: 80%;
+  height: 80vh;
+  background-image: url(../image/lab/2.avif);
+  background-size: 100% 100%;
+  background-position: center center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#light-box #box-data i,
+#light-box1 #box-data1 i,
+#light-box2 #box-data2 i,
+#light-box3 #box-data3 i {
+  font-size: 35px;
+  margin: 10px;
+  color: #ff305b;
+  cursor: pointer;
+}
+
+#light-box #box-data #exit,
+#light-box1 #box-data1 #exit1,
+#light-box2 #box-data2 #exit2,
+#light-box3 #box-data3 #exit3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* /////////////////////////////////////////////// */
+
+
+#extra-information {
+  background-color: #403D38;
+  justify-content: space-between ;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px;
+}
+
+#extra-information .extra{
+  width: 23%;
+  padding-top: 5px;
+}
+
+
+#extra-information h3{
+   padding-bottom: 25px;
+   color: white;
+   font-size: 20px;
+}
+
+#extra-information p{
+  color: #969696;
+  line-height: 30px;
+  font-size: 18px;
+  padding-bottom: 35px;
+}
+
+#extra-information  ul{
+  padding-top: 30px;
+  list-style: none;
+  font-size: 20px;
+  padding: 0px;
+  color:#969696;
+
+}
+
+#extra-information  ul li{
+  margin-bottom :20px;
+  padding-top: 10px;     
+
+}
+
+#extra-information .icons{
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#extra-information .icon{
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* //////////////////////////////////////////////////// */
+#footer {
+  background-color: RGB(51, 51, 51);
+  text-align: center;
+}
+
+#footer .footer-img {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#footer .footer-img a {
+  color: white;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+#footer .footer-img a:hover {
+  color: #ff305b;
+}
+
+#footer p {
+  font-size: 20px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+#footer p a {
+  color: #ff305b;
+}
+
+#footer p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+  #card #card-info .pro_card {
+    width: 40%;
+
+  }
+  #why .container {
+    flex-wrap: wrap;
+  }
+  #why .container .img {
+    width: 99%;
+  }
+
+  #why .container .why_info {
+    width: 99%;
+  }
+  .product #pro_lab .type,
+  .product #pro_car .type,
+  .product #pro_phone .type,
+  .product #pro_makeup .type {
+    width: 49%;
+  }
+  #extra-information .extra{
+    width: 43%;
+   
+}
+}
+
+@media screen and (max-width: 830px) {
+  .product #pro_lab .type,
+  .product #pro_car .type,
+  .product #pro_phone .type,
+  .product #pro_makeup .type {
+    width: 99%;
+  }
+  #card #card-info .pro_card {
+    width: 99%;
+    
+  }
+  #extra-information .extra{
+    width: 99%;
+   
+}
+}
+
+@media screen and (max-width: 550px) {
+  #category .container .link a {
+    font-size: 20px;
+  }
+}

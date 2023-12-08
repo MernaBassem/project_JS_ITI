@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .container {
+  background-color: RGB(51, 51, 51);
+  width: 100%;
+  margin: auto;
+}
+
+nav .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+nav .container ul li {
+  padding: 14px 24px;
+}
+
+nav .container ul li a {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff305b;
+}
+
+
+
+
+#home{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background:linear-gradient(rgba(0, 0, 0, 0.484),rgba(0, 0, 0, 0.484)) , url("../image/online-shopping-is-it-really-worth-it.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+#home .container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#home h1{
+  color: #ff305b;
+  align-content: end;
+  font-weight: bold;
+  font-size: 70px;
+  padding-right: 30px;
+}
+#home  a{
+  display: none;
+}
+
+#home .arrow{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff305b;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+}
+
+#home a.scrolled{
+  display: block;
+}
+
+#home .arrow i {
+  font-size: 25px;
+  color: white;
+}
+
+#contact {
+  padding: 45px 0px;
+}
+
+#contact .container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+#contact .contact_form {
+  width: 49%;
+}
+
+#contact .container .contact_form h3 {
+  padding-block: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #ff305b;
+}
+
+#contact .contact_form .name_email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .contact_form .name_email div {
+  width: 49%;
+}
+#contact .contact_form input,
+#contact .contact_form textarea {
+  margin-block: 8px;
+  width: 100%;
+  padding: 10px 20px;
+  border: solid black 1px;
+  border-radius: 7px;
+}
+
+#contact .contact_form input:hover,
+#contact .contact_form input:focus,
+#contact .contact_form textarea:hover,
+#contact .contact_form textarea:focus {
+  border: 1px solid #ff305b;
+  outline: 1px solid #ff305b;
+}
+
+#contact .contact_form span {
+  color: #ff305b;
+  font-size: 20px;
+  display: none;
+  padding-block: 10px;
+}
+
+#contact .contact_form button {
+  padding: 10px 30px;
+  font-size: 25px;
+  margin: 15px 0px;
+  color: white;
+  background-color: #ff305b;
+  border: none;
+  border-radius: 30px;
+}
+
+#contact .contact_form button:hover {
+  color: #ff305b;
+  border: 2px #ff305b solid;
+  background-color: transparent;
+}
+
+#contact .contact_info {
+  width: 49%;
+}
+
+#contact .container .contact_info h3 {
+  padding-block: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #ff305b;
+}
+
+#contact .container .contact_info p {
+  color: black;
+  font-size: 22px;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+
+#contact .container .contact_info ul li {
+  display: flex;
+  padding-top: 15px;
+}
+
+#contact .container .contact_info ul li .icon {
+  width: 45px;
+  background-color: #ff305b;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .container .contact_info ul li .icon i {
+  color: white;
+  font-size: 20px;
+}
+
+#contact .container .contact_info ul li span {
+  padding-left: 30px;
+  font-size: 25px;
+  color: black;
+}
+
+iframe{
+  /* margin-top: 35px; */
+  width: 100%;
+
+}
+#extra-information {
+  background-color: #403D38;
+  justify-content: space-between ;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px;
+}
+
+#extra-information .extra{
+  width: 23%;
+  padding-top: 5px;
+}
+
+
+#extra-information h3{
+   padding-bottom: 25px;
+   color: white;
+   font-size: 20px;
+}
+
+#extra-information p{
+  color: #969696;
+  line-height: 30px;
+  font-size: 18px;
+  padding-bottom: 35px;
+}
+
+#extra-information  ul{
+  padding-top: 30px;
+  list-style: none;
+  font-size: 20px;
+  padding: 0px;
+  color:#969696;
+
+}
+
+#extra-information  ul li{
+  margin-bottom :20px;
+  padding-top: 10px;     
+
+}
+
+#extra-information .icons{
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#extra-information .icon{
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#footer {
+  background-color: RGB(51, 51, 51);
+  text-align: center;
+}
+
+#footer .footer-img {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#footer .footer-img a {
+  color: white;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+#footer .footer-img a:hover {
+  color: #ff305b;
+}
+
+#footer p {
+  font-size: 20px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+#footer p a {
+  color: #ff305b;
+}
+
+#footer p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+  #contact .contact_info {
+    width: 100%;
+  }
+
+  #contact .container {
+    flex-wrap: wrap;
+    /* align-items: center; */
+  }
+  #extra-information .extra{
+    width: 47%;
+   
+}
+
+  #contact .contact_form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px){
+  #contact .contact_form .name_email {
+flex-wrap: wrap;
+  }
+  #extra-information .extra{
+    width: 99%;
+   
+}
+  #contact .contact_form .name_email div {
+    width: 100%;
+  }
+
+}
+

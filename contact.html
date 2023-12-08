@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="container">
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="about.html"> About </a>
+            </li>
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="home">
+        <div class="container">
+          <h1>Contact US</h1>
+        </div>
+        <a href="#home" id="link">
+          <div class="arrow">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+        </a>
+       
+      </div>
+      <div id="contact">
+        <div class="container">
+          <div class="contact_form">
+            <h3>Contact Form</h3>
+            <form onsubmit="validate();" method="post">
+              <div class="name_email">
+                <div>
+                  <input
+                    oninput="inputName()"
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                  />
+                  <br />
+                  <span class="name">Name Must be String And > 3 Letter</span>
+                </div>
+                <div>
+                  <input
+                    oninput="inputEmail()"
+                    id="email"
+                    type="email"
+                    placeholder="Email"
+                  />
+                  <br />
+                  <span class="email">Email is Not Correct</span>
+                </div>
+              </div>
+              <div class="password">
+                <input
+                  oninput="inputPassword()"
+                  type="password"
+                  id="pass"
+                  placeholder="Password"
+                />
+                <br />
+                <span class="pass">The Password must be > 8 charcter</span>
+              </div>
+              <div class="message_div">
+                <textarea
+                  oninput="inputMessage()"
+                  name="message"
+                  id="message"
+                  rows="20"
+                  placeholder="Message"
+                ></textarea>
+                <br />
+                <span class="message">The Message must be > 4 charcter</span>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="contact_info">
+            <h3>Conact Information</h3>
+            <p>
+              I am text block. Click edit button to change this text. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+              luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <p>Our contact details:</p>
+
+            <ul>
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <span> 01271362480 </span>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <span> mernabassem21@gmail.com </span>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <span>Merna Bassem</span>
+              </li>
+
+              <li>
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <span id="linked">www.linkedin.com/in/merna-bassem-ab9568234 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13817.168794445011!2d31.2017111!3d30.0284739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847bb846e3799%3A0x548589ae5d24cbd0!2sITI%20Cairo%20University!5e0!3m2!1sar!2seg!4v1700942760972!5m2!1sar!2seg"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+      <div id="extra-information">
+
+        <div class=" extra">
+            <h3>About us</h3>
+            <p>
+                I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+            </p>
+            <p>
+                We are the champions! We are the most amazing theme of all time, yeah.
+            </p>
+        </div>
+  
+        <div class="extra">
+            <h3>Why we are special?</h3>
+            <ul>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Our magical recipe.
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    We care about environment.
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    We are trusted by hundreds of clients. 
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Social media loves us!
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    This list is super easy to create.
+                </li>
+            </ul>
+        </div>
+  
+        <div class="extra" >
+            <h3>Opening Hours</h3>
+            <ul>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Monday 10AM - 9PM
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Tuesday 10AM - 9PM
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Wednesday 10AM - 9PM
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Thursday 10AM - 10PM
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Friday 10AM - 10PM
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                    Weekends 10AM - 11PM
+                </li>
+            </ul>
+        </div>
+  
+        <div class="extra">
+            <h3>Contact Details</h3>
+            <ul>
+                <li>
+                    <img class="icon" src="image/Icons/location.png" alt="Address"/>Manchester Road 123-78B, Silictown 7854MD, Great Country
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icon" src="image/Icons/phone-gray.png" alt="phone"/>+46 123 456 789
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img  class="icon" src="image/Icons/email-solid.png" alt="email"/>hello@sitename.com
+                </li>
+                <hr class="horizontal-line"/>
+                <li>
+                    <img class="icon" src="image/Icons/earth.png" alt="site name"/>http://www.sitename.com
+                </li>
+            </ul>
+           
+        </div>
+  
+  
+  
+    </div>
+
+      <div id="footer">
+        <div class="footer-img">
+          <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook-f"></i> </a>
+          <a href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i> </a>
+          <a href="https://www.google.com.eg/?hl=ar"> <i class="fa-brands fa-google"></i> </a>
+          <a href="https://github.com/"> <i class="fa-brands fa-github"></i> </a>
+          <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i> </a>
+        </div>
+        <p>
+          Copy Right 2018 © By <a href="#home">Theme-fair</a> All Rights
+          Reserved
+        </p>
+      </div>
+    </main>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

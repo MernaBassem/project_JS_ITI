@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .container {
+  background-color: RGB(51, 51, 51);
+  width: 100%;
+  margin: auto;
+}
+
+nav .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+nav .container ul li {
+  padding: 14px 24px;
+}
+
+nav .container ul li a {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff305b;
+}
+
+#home{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background:linear-gradient(rgba(0, 0, 0, 0.484),rgba(0, 0, 0, 0.484)) ,url("../image/online-shopping-is-it-really-worth-it.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#home .container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#home h1{
+  color: #ff305b;
+  align-content: end;
+  font-weight: bold;
+  font-size: 90px;
+  padding-right: 30px;
+}
+
+#home  a{
+  display: none;
+}
+
+#home a.scrolled{
+  display: block;
+}
+
+
+#home .arrow{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff305b;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+}
+
+
+#home .arrow i {
+  font-size: 25px;
+  color: white;
+}
+
+
+#about .container{
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .container .about_info , #about .container .img{
+  width: 49%;
+}
+
+#about .container .img img{
+  width: 98%;
+}
+
+#about .container .about_info h3{
+  color: #ff305b;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+#about .container .about_info hr{
+  width: 50%;
+  height:5px;
+  border: none;
+  background-color: #ff305b;
+}
+
+#about .container .about_info p {
+  line-height: 30px;
+  font-size: 25px;
+  padding-block: 30px;
+}
+
+#info{
+  padding: 30px;
+  background-color: RGB(241, 241, 241);
+}
+
+#info h3{
+  text-align: center;
+
+  color: #ff305b;
+  font-size: 45px;
+  padding-block: 20px;
+}
+
+
+
+#info p{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color:rgb(20, 20, 20);
+}
+
+#info .container{
+  width: 95%;
+  padding-block:30px ;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#info .container div{
+  width: 32.5%;
+}
+
+#info .container div h5{
+  font-size: 22px;
+  padding-block: 10px;
+  font-weight: bold;
+}
+
+#info .container div p {
+  line-height: 25px;
+  color:rgb(20, 20, 20) ;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+/* .location{
+  padding-top: 50px;
+}
+
+.location h3{
+  text-align: center;
+  color: #ff305b;
+  font-size: 45px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+
+.location h3::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #ff305b;
+  transform: translateX(-50%);
+  width: 285px;
+  height: 3px;
+}
+
+iframe{
+  margin-top: 35px;
+  width: 100%;
+
+} */
+
+
+.like{
+  /* background-color: RGB(241, 241, 241); */
+  padding: 50px 0px;
+}
+
+.like .parent{
+  margin: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.like .parent div{
+  width:24%;
+  padding-top: 30px;
+  text-align: center;
+}
+.like .parent div i {
+  color: #ff305b;
+  font-size: 40px;
+  text-align: center;
+}
+.like .parent div h5{
+padding: 15px;
+font-size: 45px;
+text-align: center;
+}
+.like .parent div p{
+  
+  font-size: 25px;
+  text-align: center;
+  }
+
+
+ #extra-information {
+    background-color: #403D38;
+    justify-content: space-between ;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px;
+}
+
+#extra-information .extra{
+    width: 23%;
+    padding-top: 5px;
+}
+
+
+#extra-information h3{
+     padding-bottom: 25px;
+     color: white;
+     font-size: 20px;
+}
+
+#extra-information p{
+    color: #969696;
+    line-height: 30px;
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
+#extra-information  ul{
+    padding-top: 30px;
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+    color:#969696;
+ 
+}
+
+#extra-information  ul li{
+    margin-bottom :20px;
+    padding-top: 10px;     
+
+}
+
+#extra-information .icons{
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#extra-information .icon{
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+#footer {
+  background-color: RGB(51, 51, 51);
+  text-align: center;
+}
+
+#footer .footer-img {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#footer .footer-img a {
+  color: white;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+#footer .footer-img a:hover {
+  color: #ff305b;
+}
+
+#footer p {
+  font-size: 20px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+#footer p a {
+  color: #ff305b;
+}
+
+#footer p a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width: 1150px) {
+  #about .container{
+flex-wrap: wrap;
+  }
+  
+  #about .container .about_info , #about .container .img{
+    width: 100%;
+  }
+
+  #info .container div{
+    width: 48%;
+  }
+  #extra-information .extra{
+    width: 47%;
+   
+}
+.like .parent div{
+  width:48%;
+  
+}
+}
+
+@media screen and (max-width: 700px){
+  #info .container div{
+    width: 99%;
+  }
+  #extra-information .extra{
+    width: 99%;
+   
+}
+.like .parent div{
+  width:99%;
+  
+}
+} 

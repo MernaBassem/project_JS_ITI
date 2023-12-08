@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="caption">
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+  
+            <li>
+              <a href="about.html"> About </a>
+            </li>
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+          <div id="card-icon">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+          </div>
+        </div>
+    
+      </div>
+  
+    </nav>
+    <div id="card"  class="d-none" >
+      <div id="card-info">
+        <i id="exit4" class="fa-sharp fa-solid fa-circle-xmark"></i>
+       <div class="all_data">
+       </div>
+
+      </div>
+      
+    </div>
+    <div id="home">
+      <div class="container">
+        <h1>Home</h1>
+      </div>
+      <a href="#home" id="link">
+        <div class="arrow">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </a>
+    </div>
+    <div id="why">
+      <div class="container">
+        <div class="img">
+          <img
+            src="image/pop-art-girl-holding-shopping-bags_88138-217.avif"
+            alt="shopping"
+          />
+        </div>
+        <div class="why_info">
+          <h2>Who we are?</h2>
+          <p>
+            We have been operating for over 30 years and are Members of The
+            Federation of Master Builders. We work on projects big and small
+            from small residential extensions to full house. We are so happy
+            with this theme. Everyday it make our lives better.
+          </p>
+          <ul>
+            <li>
+              <div>
+                <i class="fa-solid fa-feather-pointed"></i>
+              </div>
+              <span>We care about environment.</span>
+            </li>
+            <li>
+              <div>
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <span>We are trusted by hundreds of clients.</span>
+            </li>
+            <li>
+              <div>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <span> Social media loves us!</span>
+            </li>
+            <li>
+              <div>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <span>This list is super easy to create.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="slider">
+      <div class="container">
+        <div class="back" >
+          <button onclick="back()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </div>
+        <div class="image">
+          <img src="image/lab/2.avif" id="image1" alt="lab" />
+        </div>
+        <div class="next" >
+          <button onclick="next2()">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+  <!-- end slider -->
+ 
+    <div id="category">
+      <div class="container">
+        <h2>Categories</h2>
+        <hr class="hr1" />
+        <hr class="hr2" />
+        <hr class="hr1" />
+
+        <div class="link">
+          <a href="#pro_lab" class="active" onclick="lab()" id="lab_info">
+            Laptops
+          </a>
+          <a href="#pro_phone" onclick="phone()" id="phone_info"> Phones </a>
+          <a href="#pro_car" onclick="car()" id="car_info"> Cars </a>
+          <a href="#pro_makeup" onclick="makeup()" id="makeup_info"> MakeUp </a>
+        </div>
+
+        <div class="product">
+          <div id="pro_lab">
+            <div class="all">
+              <div class="type" id="leno" >
+                <div class="pro_card">
+                  <div class="img">
+                    <img
+                      src="image/lab/MSFT-Surfcae-laptops-models-hero-poster.avif"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3>Lenovo</h3>
+                    <span>12000EPG</span>
+                    <span class="del">13500EPG</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="lab-leno">0</span> </p>
+                    <button class="icon Delete" onclick="Labremove()">Delete From Cart</button>
+                     <button class="icon" id="lab-lenovo">ADD To Cart</button>
+                   
+                  </div>
+                </div>
+              </div>
+             
+
+              <div class="type" id="app">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/lab/5.jpg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Apple</h3>
+                    <span>30000EGP</span>
+                    <span class="del">32000EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="lab-app"></span> </p>
+                    <button class="icon Delete"  onclick="Appleremove()">Delete From Cart</button>
+                    <button class="icon" id="lab-apple">ADD To Cart</button>
+  
+                  </div>
+                </div>
+          
+              </div>
+
+              
+              <div class="type" id="dell">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/lab/6.jpg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Dell</h3>
+                    <span>15000EGP</span>
+                    <span class="del">15700EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-dell"></span> </p>
+                    <button class="icon Delete"  onclick="Dellremove()">Delete From Cart</button>
+                    <button class="icon" id="lab-dell">ADD To Cart</button>
+  
+                  </div>
+                  </div>
+               
+              </div>
+
+              <div class="type" id="asus">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/lab/1.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>ASUS</h3>
+                    <span>12000EGP</span>
+                    <span class="del">13500EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-asus"></span> </p>
+                    <button class="icon Delete"  onclick="Asusremove()">Delete From Cart</button>
+                    <button class="icon" id="lab-asus">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="hp">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/lab/4.webp" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Hp</h3>
+                    <span>8000EGP</span>
+                    <span class="del">9000EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-hp"></span> </p>
+                    <button class="icon Delete"  onclick="hpremove()">Delete From Cart</button>
+                    <button class="icon" id="lab-hp">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="acer">
+                <div class="pro_card">
+                  <div class="img">
+                    <img
+                      src="image/lab/best-cheap-laptops-646786e23599f.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3>Acer</h3>
+                    <span>10000EGP</span>
+                    <span class="del">10500EGP</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-acer"></span> </p>
+                    <button class="icon Delete"  onclick="acerRemove()">Delete From Cart</button>
+                    <button class="icon" id="lab-acer">ADD To Cart</button>
+  
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div id="pro_phone">
+            <div class="all">
+              <div class="type" id="iphone">
+                <div class="pro_card">
+                  <div class="img">
+                    <img
+                      src="image/phone/2.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3>IPhone</h3>
+                    <span>60000EGP</span>
+                    <span class="del">60300EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-iphone"></span> </p>
+                    <button class="icon Delete"  onclick="iphoneRemove()">Delete From Cart</button>
+                    <button class="icon"  id="phone-iphone">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="samsung">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/phone/1.webp" alt="samsung" />
+                  </div>
+                  <div class="contact">
+                    <h3>Samsung</h3>
+                    <span>15000EGP</span>
+                    <span class="del">15500EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-samsung"></span> </p>
+                    <button class="icon Delete"  onclick="samsungRemove()">Delete From Cart</button>
+                    <button class="icon" id="phone-samsung">ADD To Cart</button>
+  
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="type" id="nokia">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/phone/3.webp" alt="nokia" />
+                  </div>
+                  <div class="contact">
+                    <h3>Nokia</h3>
+                    <span>13000EGP </span>
+                    <span class="del">14000EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-nokia"></span> </p>
+                    <button class="icon Delete"  onclick="nokiaRemove()">Delete From Cart</button>
+                    <button class="icon"id="phone-nokia">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="oppo">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/phone/4.webp" alt="oppo" />
+                  </div>
+                  <div class="contact">
+                    <h3>Oppo</h3>
+                    <span>20000EGP</span>
+                    <span class="del">21500EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-oppo"></span> </p>
+                    <button class="icon Delete"  onclick="oppoRemove()">Delete From Cart</button>
+                    <button class="icon" id="phone-oppo">ADD To Cart</button>
+  
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="type" id="huawei">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/phone/5.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Huawei</h3>
+                    <span>11000EGP</span>
+                    <span class="del">12000EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-huawei"></span> </p>
+                    <button class="icon Delete"  onclick="huaweiRemove()">Delete From Cart</button>
+                    <button class="icon" id="phone-huawei">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="vivo">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/phone/6.webp" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>ViVo</h3>
+                    <span>10000EGP</span>
+                    <span class="del">11500EGP</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-vivo"></span> </p>
+                    <button class="icon Delete"  onclick="vivoRemove()">Delete From Cart</button>
+                    <button class="icon" id="phone-vivo">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div id="pro_car">
+            <div class="all">
+              <div class="type" id="car1">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/car/6.jpg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Sedan</h3>
+                    <span>600000EGP</span>
+                    <span class="del">600300EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-car1"></span> </p>
+                    <button class="icon Delete"  onclick="car1Remove()">Delete From Cart</button>
+                    <button class="icon" id="car-car1">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="car2">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/car/pexels-photo-170811.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>SUV</h3>
+                    <span>700000EGP</span>
+                    <span class="del">700500EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-car2"></span> </p>
+                    <button class="icon Delete"  onclick="car2Remove()">Delete From Cart</button>
+                    <button class="icon" id="car-car2">ADD To Cart</button>
+  
+                  </div>
+                </div>
+
+               
+              </div>
+
+              <div class="type" id="car3">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/car/3.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>CUV</h3>
+                    <span>750000EGP </span>
+                    <span class="del">760000EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+  
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-car3"></span> </p>
+                    <button class="icon Delete"  onclick="car3Remove()">Delete From Cart</button>
+                    <button class="icon" id="car-car3">ADD To Cart</button>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="type" id="car4">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/car/3.jpg" alt="" />
+                  </div>
+                  <div class="contact" id="car4">
+                    <h3>MUV</h3>
+                    <span>650000EGP</span>
+                    <span class="del">660000EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+  
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-car4"></span> </p>
+                    <button class="icon Delete"  onclick="car4Remove()">Delete From Cart</button>
+                    <button class="icon" id="car-car4">ADD To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="car5">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/car/2.webp" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>VAN</h3>
+                    <span>800000EGP</span>
+                    <span class="del">850000EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+  
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-car5"></span> </p>
+                    <button class="icon Delete"  onclick="car5Remove()">Delete From Cart</button>
+                    <button class="icon" id="car-car5">ADD To Cart</button>
+  
+                </div>
+               
+                </div>
+              </div>
+
+              <div class="type" id="car6">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/car/6.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Dodge</h3>
+                    <span>100000EGP</span>
+                    <span class="del">100500EGP</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-car6"></span> </p>
+                    <button class="icon Delete"  onclick="car6Remove()">Delete From Cart</button>
+                    <button class="icon" id="car-car6">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div id="pro_makeup">
+            <div class="all">
+              <div class="type" id="makeup1">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/makeUp/1.jpg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Mascara</h3>
+                    <span>88EGP</span>
+                    <span class="del">95EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+  
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-makeup1"></span> </p>
+                    <button class="icon Delete"  onclick="makeup1Remove()">Delete From Cart</button>
+                    <button class="icon" id="makeup-makeup1">ADD To Cart</button>
+  
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="type" id="makeup2">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/makeUp/4.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Liquid Blush</h3>
+                    <span>2399EGP</span>
+                    <span class="del">2450EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-makeup2"></span> </p>
+                    <button class="icon Delete"  onclick="makeup2Remove()">Delete From Cart</button>
+                    <button class="icon" id="makeup-makeup2">ADD To Cart</button>
+  
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="makeup3">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/makeUp/3.jpg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Waterproof</h3>
+                    <span>379EGP</span>
+                    <span class="del">421EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+  
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-makeup3"></span> </p>
+                    <button class="icon Delete"  onclick="makeup3Remove()">Delete From Cart</button>
+                    <button class="icon" id="makeup-makeup3">ADD To Cart</button>
+  
+  
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="type" id="makeup4">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/makeUp/5.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Lip Stain</h3>
+                    <span>320EGP</span>
+                    <span class="del">350EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+  
+  
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-makeup4"></span> </p>
+                    <button class="icon Delete"  onclick="makeup4Remove()">Delete From Cart</button>
+                    <button class="icon" id="makeup-makeup4">ADD To Cart</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="type" id="makeup5">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/makeUp/2.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Eyeliner</h3>
+                    <span>235EGP</span>
+                    <span class="del">269EGP</span>
+  
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-makeup5"></span> </p>
+                    <button class="icon Delete"  onclick="makeup5Remove()">Delete From Cart</button>
+                    <button class="icon" id="makeup-makeup5">ADD To Cart</button>
+  
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="type" id="makeup6">
+                <div class="pro_card">
+                  <div class="img">
+                    <img src="image/makeUp/3.jpeg" alt="" />
+                  </div>
+                  <div class="contact">
+                    <h3>Highlighter</h3>
+                    <span>200EGP</span>
+                    <span class="del">208EGP</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Accusantium molestiae eius excepturi possimus nesciunt odio!
+                    </p>
+                    <p style="color:#ff305b ;font-size: 18px;font-weight: bold;" id="para-number">NUMBER OF PRODUCT : <span id="num-makeup6"></span> </p>
+                    <button class="icon Delete"  onclick="makeup6Remove()">Delete From Cart</button>
+                    <button class="icon" id="makeup-makeup6">ADD To Cart</button>
+  
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="light-box" class="d-none">
+      <div id="box-data">
+        <i id="prev" class="fa-solid fa-circle-arrow-left"></i>
+        <i id="next" class="fa-solid fa-circle-arrow-right"></i>
+        <i id="exit" class="fa-sharp fa-solid fa-circle-xmark"></i>
+
+      </div>
+    </div>
+    <div id="light-box1" class="d-none">
+      <div id="box-data1">
+        <i id="prev1" class="fa-solid fa-circle-arrow-left"></i>
+        <i id="next1" class="fa-solid fa-circle-arrow-right"></i>
+        <i id="exit1" class="fa-sharp fa-solid fa-circle-xmark"></i>
+
+      </div>
+    </div>
+    <div id="light-box2" class="d-none">
+      <div id="box-data2">
+        <i id="prev2" class="fa-solid fa-circle-arrow-left"></i>
+        <i id="next2" class="fa-solid fa-circle-arrow-right"></i>
+        <i id="exit2" class="fa-sharp fa-solid fa-circle-xmark"></i>
+
+      </div>
+    </div>
+    <div id="light-box3" class="d-none">
+      <div id="box-data3">
+        <i id="prev3" class="fa-solid fa-circle-arrow-left"></i>
+        <i id="next3" class="fa-solid fa-circle-arrow-right"></i>
+        <i id="exit3" class="fa-sharp fa-solid fa-circle-xmark"></i>
+
+      </div>
+    </div>
+
+    <div id="extra-information">
+
+      <div class=" extra">
+          <h3>About us</h3>
+          <p>
+              I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+          </p>
+          <p>
+              We are the champions! We are the most amazing theme of all time, yeah.
+          </p>
+      </div>
+
+      <div class="extra">
+          <h3>Why we are special?</h3>
+          <ul>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Our magical recipe.
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  We care about environment.
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  We are trusted by hundreds of clients. 
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Social media loves us!
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  This list is super easy to create.
+              </li>
+          </ul>
+      </div>
+
+      <div class="extra" >
+          <h3>Opening Hours</h3>
+          <ul>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Monday 10AM - 9PM
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Tuesday 10AM - 9PM
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Wednesday 10AM - 9PM
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Thursday 10AM - 10PM
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Friday 10AM - 10PM
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icons" src="image/Icons/arrow.png" alt="arrow"/>
+                  Weekends 10AM - 11PM
+              </li>
+          </ul>
+      </div>
+
+      <div class="extra">
+          <h3>Contact Details</h3>
+          <ul>
+              <li>
+                  <img class="icon" src="image/Icons/location.png" alt="Address"/>Manchester Road 123-78B, Silictown 7854MD, Great Country
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icon" src="image/Icons/phone-gray.png" alt="phone"/>+46 123 456 789
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img  class="icon" src="image/Icons/email-solid.png" alt="email"/>hello@sitename.com
+              </li>
+              <hr class="horizontal-line"/>
+              <li>
+                  <img class="icon" src="image/Icons/earth.png" alt="site name"/>http://www.sitename.com
+              </li>
+          </ul>
+         
+      </div>
+
+
+
+  </div>
+  
+
+    <div id="footer">
+      <div class="footer-img">
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.google.com.eg/?hl=ar">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="https://github.com/"> <i class="fa-brands fa-github"></i> </a>
+        <a href="https://www.linkedin.com/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p>
+        Copy Right 2018 © By <a href="#home">Theme-fair</a> All Rights Reserved
+      </p>
+    </div>
+
+      <script src="js/main.js"></script>
+  </body>
+</html>
